@@ -1,0 +1,90 @@
+﻿@model Data._event
+
+@{
+    ViewBag.Title = "Par";
+    Layout = "~/Views/Shared/_LayoutIrmc.cshtml";
+}
+
+<h2>Par</h2>
+
+<div>
+    <h4>_event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.canceled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canceled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.capacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.capacity)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+  
+
+        <dt>
+            @Html.DisplayNameFor(model => model.etat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.etat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nbPart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nbPart)
+        </dd>
+
+    
+
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valide)
+        </dd>
+
+  
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_Ev }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
